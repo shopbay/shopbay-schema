@@ -1,0 +1,10 @@
+# netbeans project files
+nbproject
+
+# Mac DS_Store Files
+.DS_Store
+
+# ------------------------------------------
+# Exception : mainly used for empty folder
+# ------------------------------------------
+!.gitignore
