@@ -116,6 +116,13 @@ INSERT INTO `s_auth_itemchild` VALUES('Administrator Workflow', 'Tasks.Subscript
 INSERT INTO `s_auth_itemchild` VALUES('Administrator Workflow', 'Tasks.Subscription.Suspend');
 INSERT INTO `s_auth_itemchild` VALUES('Administrator Workflow', 'Tasks.Theme.Activate');
 INSERT INTO `s_auth_itemchild` VALUES('Administrator Workflow', 'Tasks.Theme.Deactivate');
+-- Plan subscrition admin workflow;
+INSERT INTO `s_auth_item` VALUES('Plan Subscription Workflow', 1, 'Plan Subscription Workflow', NULL, 'N;');
+INSERT INTO `s_auth_itemchild` VALUES('Plan Subscription Workflow', 'Tasks.Subscription.Activate');
+INSERT INTO `s_auth_itemchild` VALUES('Plan Subscription Workflow', 'Tasks.Subscription.Deactivate');
+INSERT INTO `s_auth_itemchild` VALUES('Plan Subscription Workflow', 'Tasks.Subscription.Pastdue');
+INSERT INTO `s_auth_itemchild` VALUES('Plan Subscription Workflow', 'Tasks.Subscription.Suspend');
+INSERT INTO `s_auth_itemchild` VALUES('Plan Subscription Workflow', 'Tasks.Subscription.Cancel');
 -- Ticket admin workflow;
 INSERT INTO `s_auth_item` VALUES('Tickets Workflow', 1, 'Tickets Workflow', NULL, 'N;');
 INSERT INTO `s_auth_itemchild` VALUES('Tickets Manager', 'Tickets Workflow');

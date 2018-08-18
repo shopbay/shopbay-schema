@@ -67,7 +67,13 @@ INSERT INTO `s_auth_item` VALUES('Subscriptions', 1, 'Subscriptions', NULL, 'N;'
 INSERT INTO `s_auth_item` VALUES('Subscriptions.Management.Index', 0, NULL, NULL, 'N;');
 INSERT INTO `s_auth_item` VALUES('Subscriptions.Management.View', 0, NULL, NULL, 'N;');
 INSERT INTO `s_auth_item` VALUES('Subscriptions.Management.Check', 0, NULL, NULL, 'N;');
+
 INSERT INTO `s_auth_itemchild` VALUES('Merchant', 'Subscriptions');
+-- --------------------------------------------------------
+-- Support admin users to be able to subcribe to plan/package (for storage plan to store media files)
+-- ;
+INSERT INTO `s_auth_itemchild` VALUES('Administrator', 'Subscriptions');
+
 INSERT INTO `s_auth_itemchild` VALUES('Subscriptions', 'Subscriptions.Management.Index');
 INSERT INTO `s_auth_itemchild` VALUES('Subscriptions', 'Subscriptions.Management.View');
 INSERT INTO `s_auth_itemchild` VALUES('Subscriptions', 'Subscriptions.Management.Check');
